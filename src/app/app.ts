@@ -1,9 +1,9 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {ConversationIndex} from './features/conversation/pages/conversation-index/conversation-index';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [ConversationIndex],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

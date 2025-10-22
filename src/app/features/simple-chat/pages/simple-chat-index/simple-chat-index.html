@@ -1,0 +1,5 @@
+<input type="text" [(ngModel)]="newMessage" placeholder="type a message" (keyup.enter)="sendMessage()">
+<button (click)="sendRequestResponseMessage()">Send</button>
+@for (message of messages; track message) {
+    <p>{{message.content}}</p>
+}

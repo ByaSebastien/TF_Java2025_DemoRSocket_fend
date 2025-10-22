@@ -1,0 +1,27 @@
+:host {
+  display: flex;
+  min-height: 100vh;
+  max-width: 350px;
+  gap: 1rem;
+
+  .left{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: aquamarine;
+
+    .conversations-list{
+      flex: 1;
+      width: 100%;
+    }
+
+    .conversation-add{
+      display: flex;
+      gap: 1rem;
+    }
+  }
+}
+
+p {
+  font-size: 1.5rem;
+}

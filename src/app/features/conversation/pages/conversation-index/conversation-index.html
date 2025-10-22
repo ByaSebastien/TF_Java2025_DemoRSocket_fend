@@ -1,0 +1,16 @@
+<div class="left">
+  <div class="conversations-list">
+    @for (c of conversations(); track c.id) {
+      <p (click)="setConversation(c.id)">{{c.name}}</p>
+    }
+  </div>
+  <div class="conversation-add">
+    <input type="text" [(ngModel)]="conversationInput" placeholder="add conversation" (keydown.enter)="postConversation()">
+    <button (click)="postConversation()">Add conversation</button>
+  </div>
+</div>
+<div class="right">
+  @if(currentConversationId()){
+    <app-conversation [conversationId]="currentConversationId()!"></app-conversation>
+  }
+</div>
